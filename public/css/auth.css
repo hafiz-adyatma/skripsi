@@ -1,0 +1,41 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+}
+
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+}
+
+.custom-checkbox .form-check-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.custom-checkbox .form-check-input:checked {
+    background-color: #F79009;
+}

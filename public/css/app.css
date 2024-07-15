@@ -1,0 +1,144 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Navbar */
+.navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #ccc;
+}
+
+.navbar .btn {
+    font-size: 1.25rem;
+}
+
+.navbar.scrolled {
+    background-color: #F79009 !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    z-index: 1040;
+    overflow-y: auto;
+}
+
+#closeSidebar {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#sidebar ul {
+    padding-left: 0;
+}
+
+.btn-warning {
+    background-color: #F79009;
+    border: none;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.custom-checkbox .form-check-input {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.custom-checkbox .form-check-input:checked {
+    background-color: #F79009;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.size-btn {
+    background-color: #F79009;
+    color: white;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.size-btn.selected {
+    background-color: white;
+    color: #F79009;
+    border: 1px solid #F79009;
+}
+
+.form-check-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.size-btn-selected {
+    background-color: #4CAF50 !important;
+    color: white;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: right;
+    }
+}
+
+@media (max-width: 720px) {
+    .embed-responsive {
+        width: 500px;
+        height: auto;
+    }
+}
